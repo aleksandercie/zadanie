@@ -1,0 +1,195 @@
+/* General styles */
+
+body {
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+input, select {
+   border: 0;
+   text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+h1, h2 {
+   font-weight: 500;
+}
+
+/* Header */
+
+header {
+   text-align: center;
+}
+header span {
+   font-size: 1.3em;
+   font-weight: 900;
+}
+
+/* Background */
+
+.image {
+   width: 100%;
+   height: 400px;
+   background-image: url(../image/restaurant-449952_1280.jpg);
+   background-size: cover;
+   background-position: 50%;
+   background-repeat: no-repeat;
+}
+/* Information */
+
+.info {
+   width: 30%;
+   height: 180px;
+   margin: 20px 40px;
+   overflow: auto;
+}
+
+.info::-webkit-scrollbar {
+  width: 20px;
+}
+
+
+.info::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+
+.info::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: gray;
+}
+
+/* Form */
+
+form {
+   width: 40%;
+   height: 500px;
+   position: absolute;
+   top: 30%;
+   left: 45%;
+   text-align: center;
+   background-color:rgba(0,0,0,0.8);
+   color: #fff;
+}
+
+/* Input value */
+
+form input, form select {
+   width: 80%;
+   padding: 10px;
+   margin-top: 15px;
+   border-radius: 20px;
+   outline: none;
+}
+form .feedback {
+   text-align: left;
+   margin: 5px 0 0 70px;
+   font-size: 10px;
+  color: #e90027;
+}
+
+/* Agreements */
+form .agreement {
+   display: flex;
+   margin: 10px;
+   font-size: 13px;
+}
+form .agreement label {
+   display: flex;
+   padding: 5px;
+   text-align: left;
+}
+form .agreement input {
+   width: 30px;
+   margin: 10px;
+}
+form .agreement label div {
+   color: #7f962f;
+}
+
+/* Tooltip*/
+
+.tooltip {
+   position: relative;
+   margin-left: 5px;
+}
+.tooltiptext {
+   visibility: hidden;
+   padding: 10px;
+   position: absolute;
+   z-index: 1;
+   margin: 0 10px;
+   width: 100px;
+   background-color: #fff;
+   color: #000;
+}
+
+.tooltip:hover .tooltiptext {
+   visibility: visible;
+}
+
+/* Submit */
+
+form .submit {
+   width: 90%;
+   margin: auto;
+   text-align: right;
+}
+input[type="submit"] {
+   width: 40%;
+   margin: 10px 0;
+}
+input[type="submit"]:hover {
+   background-color: #7f962f;
+}
+
+/* Media Queries*/
+
+@media (max-width: 1024px) {
+   form {
+   width: 45% 
+   }
+}
+
+@media (max-width: 768px) {
+   h1, h2 {
+      font-size: 1.6em;
+   }
+   .image {
+      height: 500px;
+   }
+   form{
+      width: 70%;
+      left: 0;
+      right: 0;
+      top: 120px;
+      margin: 7px auto;
+      font-size: 0.8em; 
+   }
+   .info {
+     width: 70%;
+     margin: 20px auto;
+   }
+}
+
+@media (max-width: 520px) {
+   h1, h2 {
+      font-size: 1.3em;
+   }
+   .image {
+      background-image: none;
+   }
+   form {
+      width: 90%;
+   }
+   form input, form select {
+   padding: 5px;
+   margin-top: 10px;
+}
+   .info {
+      width: 90%;
+      margin: 50px auto;
+   }
+}
